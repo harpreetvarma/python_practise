@@ -1,0 +1,582 @@
+type "idle"
+
+
+
+Python 2.7.11 |Anaconda 2.4.1 (64-bit)| (default, Dec  7 2015, 14:10:42) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> s='abc'
+>>> 
+>>> dir()
+['__builtins__', '__doc__', '__name__', '__package__', 's']
+>>> dir(String)
+
+Traceback (most recent call last):
+  File "<pyshell#3>", line 1, in <module>
+    dir(String)
+NameError: name 'String' is not defined
+>>> dir('String')
+['__add__', '__class__', '__contains__', '__delattr__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__getslice__', '__gt__', '__hash__', '__init__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '_formatter_field_name_split', '_formatter_parser', 'capitalize', 'center', 'count', 'decode', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'index', 'isalnum', 'isalpha', 'isdigit', 'islower', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> dir('String'.s
+    )
+
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    dir('String'.s
+AttributeError: 'str' object has no attribute 's'
+>>> dir('String'.'split')
+SyntaxError: invalid syntax
+>>> help('String'.split)
+Help on built-in function split:
+
+split(...)
+    S.split([sep [,maxsplit]]) -> list of strings
+    
+    Return a list of the words in the string S, using sep as the
+    delimiter string.  If maxsplit is given, at most maxsplit
+    splits are done. If sep is not specified or is None, any
+    whitespace string is a separator and empty strings are removed
+    from the result.
+
+>>> s="a,b,.,g"
+>>> s.split
+<built-in method split of str object at 0x0000000003266350>
+>>> s.split(',')
+['a', 'b', '.', 'g']
+>>> s.isalnum()
+False
+>>> s="1j3j3"
+>>> s.isalnum()
+True
+>>> 'String'.translate
+<built-in method translate of str object at 0x0000000003203918>
+>>> 'String'.translate()
+
+Traceback (most recent call last):
+  File "<pyshell#16>", line 1, in <module>
+    'String'.translate()
+TypeError: translate expected at least 1 arguments, got 0
+>>> help('String'.translate)
+Help on built-in function translate:
+
+translate(...)
+    S.translate(table [,deletechars]) -> string
+    
+    Return a copy of the string S, where all characters occurring
+    in the optional argument deletechars are removed, and the
+    remaining characters have been mapped through the given
+    translation table, which must be a string of length 256 or None.
+    If the table argument is None, no translation is applied and
+    the operation simply removes the characters in deletechars.
+
+>>> s
+'1j3j3'
+>>> s.translate(,'j')
+SyntaxError: invalid syntax
+>>> s.translate(,)
+SyntaxError: invalid syntax
+>>> help(list)
+Help on class list in module __builtin__:
+
+class list(object)
+ |  list() -> new empty list
+ |  list(iterable) -> new list initialized from iterable's items
+ |  
+ |  Methods defined here:
+ |  
+ |  __add__(...)
+ |      x.__add__(y) <==> x+y
+ |  
+ |  __contains__(...)
+ |      x.__contains__(y) <==> y in x
+ |  
+ |  __delitem__(...)
+ |      x.__delitem__(y) <==> del x[y]
+ |  
+ |  __delslice__(...)
+ |      x.__delslice__(i, j) <==> del x[i:j]
+ |      
+ |      Use of negative indices is not supported.
+ |  
+ |  __eq__(...)
+ |      x.__eq__(y) <==> x==y
+ |  
+ |  __ge__(...)
+ |      x.__ge__(y) <==> x>=y
+ |  
+ |  __getattribute__(...)
+ |      x.__getattribute__('name') <==> x.name
+ |  
+ |  __getitem__(...)
+ |      x.__getitem__(y) <==> x[y]
+ |  
+ |  __getslice__(...)
+ |      x.__getslice__(i, j) <==> x[i:j]
+ |      
+ |      Use of negative indices is not supported.
+ |  
+ |  __gt__(...)
+ |      x.__gt__(y) <==> x>y
+ |  
+ |  __iadd__(...)
+ |      x.__iadd__(y) <==> x+=y
+ |  
+ |  __imul__(...)
+ |      x.__imul__(y) <==> x*=y
+ |  
+ |  __init__(...)
+ |      x.__init__(...) initializes x; see help(type(x)) for signature
+ |  
+ |  __iter__(...)
+ |      x.__iter__() <==> iter(x)
+ |  
+ |  __le__(...)
+ |      x.__le__(y) <==> x<=y
+ |  
+ |  __len__(...)
+ |      x.__len__() <==> len(x)
+ |  
+ |  __lt__(...)
+ |      x.__lt__(y) <==> x<y
+ |  
+ |  __mul__(...)
+ |      x.__mul__(n) <==> x*n
+ |  
+ |  __ne__(...)
+ |      x.__ne__(y) <==> x!=y
+ |  
+ |  __repr__(...)
+ |      x.__repr__() <==> repr(x)
+ |  
+ |  __reversed__(...)
+ |      L.__reversed__() -- return a reverse iterator over the list
+ |  
+ |  __rmul__(...)
+ |      x.__rmul__(n) <==> n*x
+ |  
+ |  __setitem__(...)
+ |      x.__setitem__(i, y) <==> x[i]=y
+ |  
+ |  __setslice__(...)
+ |      x.__setslice__(i, j, y) <==> x[i:j]=y
+ |      
+ |      Use  of negative indices is not supported.
+ |  
+ |  __sizeof__(...)
+ |      L.__sizeof__() -- size of L in memory, in bytes
+ |  
+ |  append(...)
+ |      L.append(object) -- append object to end
+ |  
+ |  count(...)
+ |      L.count(value) -> integer -- return number of occurrences of value
+ |  
+ |  extend(...)
+ |      L.extend(iterable) -- extend list by appending elements from the iterable
+ |  
+ |  index(...)
+ |      L.index(value, [start, [stop]]) -> integer -- return first index of value.
+ |      Raises ValueError if the value is not present.
+ |  
+ |  insert(...)
+ |      L.insert(index, object) -- insert object before index
+ |  
+ |  pop(...)
+ |      L.pop([index]) -> item -- remove and return item at index (default last).
+ |      Raises IndexError if list is empty or index is out of range.
+ |  
+ |  remove(...)
+ |      L.remove(value) -- remove first occurrence of value.
+ |      Raises ValueError if the value is not present.
+ |  
+ |  reverse(...)
+ |      L.reverse() -- reverse *IN PLACE*
+ |  
+ |  sort(...)
+ |      L.sort(cmp=None, key=None, reverse=False) -- stable sort *IN PLACE*;
+ |      cmp(x, y) -> -1, 0, 1
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |  
+ |  __hash__ = None
+ |  
+ |  __new__ = <built-in method __new__ of type object>
+ |      T.__new__(S, ...) -> a new object with type S, a subtype of T
+
+>>> a=[1,2,3]
+>>> b=[4,5,6]
+>>> a.extend(b)
+>>> a
+[1, 2, 3, 4, 5, 6]
+>>> b
+[4, 5, 6]
+>>> a.append(b)
+>>> a
+[1, 2, 3, 4, 5, 6, [4, 5, 6]]
+>>> a.pop()
+[4, 5, 6]
+>>> a
+[1, 2, 3, 4, 5, 6]
+>>> a.insert(0,0)
+>>> a
+[0, 1, 2, 3, 4, 5, 6]
+>>> a.insert(9,1)
+>>> a
+[0, 1, 2, 3, 4, 5, 6, 1]
+>>> a.insert(1,9)
+>>> a
+[0, 9, 1, 2, 3, 4, 5, 6, 1]
+>>> 
+>>> 
+>>> 
+>>> def pal(s):
+	length = len(s);
+	ret = 1;
+	for i in range(length):
+		if s[i]==s[length-1]:
+			ret = 1;
+		else:
+			ret = 0 ;
+			return;
+
+		
+>>> pal("madam")
+>>> print pal("madam")
+None
+>>> def pal(s):
+	length = len(s);
+	ret = 1;
+	for i in range(length):
+		if s[i]==s[length-1]:
+			ret = 1;
+		else:
+			ret = 0 ;
+			return;
+return ret;
+SyntaxError: invalid syntax
+>>> pal
+<function pal at 0x00000000033006D8>
+>>> pal()
+
+Traceback (most recent call last):
+  File "<pyshell#54>", line 1, in <module>
+    pal()
+TypeError: pal() takes exactly 1 argument (0 given)
+>>> def pal(s):
+	length = len(s);
+	ret = 1;
+	for i in range(length):
+		if s[i]==s[length-1]:
+			ret = 1;
+		else:
+			ret = 0 ;
+			return;
+
+		
+>>> def pal(s):
+	length = len(s);
+	ret = 1;
+	for i in range(length):
+		if s[i]==s[length-1]:
+			ret = 1;
+		else:
+			ret = 0 ;
+			return;
+
+		
+>>> def pal(s):
+	length = len(s);
+	ret = 1;
+	for i in range(length):
+		if s[i]==s[length-1]:
+			ret = 1;
+		else:
+			ret = 0 ;
+			return;
+
+		
+>>> def pal(s):
+	length = len(s);
+	ret = 1;
+	for i in range(length):
+		if s[i]==s[length-1]:
+			ret = 1;
+		else:
+			return ret = 0;
+		return ret;
+	
+SyntaxError: invalid syntax
+>>> def pal(s):
+	length = len(s);
+	ret = 1;
+	for i in range(length):
+		if s[i]==s[length-1]:
+			ret = 1;
+		else:
+			return ret = 0;
+	return ret;
+SyntaxError: invalid syntax
+>>> def pal(s):
+	length = len(s);
+	ret = 1;
+	for i in range(length):
+		if s[i]==s[length-1]:
+			ret = 1;
+		else:
+			return ret = 0;
+    return ret;
+SyntaxError: invalid syntax
+>>> def pal(s):
+	length = len(s);
+	ret = 1;
+	for i in range(length):
+		if s[i]==s[length-1]:
+			ret = 1;
+		else:
+			return ret = 0;
+	return ret;
+SyntaxError: invalid syntax
+>>> def pal(s):
+	length = len(s);
+	ret = 0;
+	for i in range(length):
+		if s[i]==s[length-1]:
+			ret = 1;
+		else:
+			break;
+	if ret == 1:
+		print "pal";
+	else
+	
+SyntaxError: invalid syntax
+>>> def pal(s):
+	length = len(s);
+	ret = 0;
+	for i in range(length):
+		if s[i]==s[length-1]:
+			ret = 1;
+		else:
+			break;
+	if ret == 1:
+		print "pal";
+	else:
+		print "not pal";
+
+	
+>>> pal("madam")
+pal
+>>> pal("oops")
+not pal
+>>> pal("dld")
+pal
+>>> len("madam")
+5
+>>> def pal2(s):
+	length = len(s);
+	i = 0 ;
+	ret = 0;
+	j = length-1;
+	while i!=j:
+		if s[i]==s[j]:
+			ret =1;
+		else:
+			break;
+		i=i+1;
+		j=j-1;
+	if ret == 1:
+		print "pal";
+	else:
+		print "not pal";
+
+	
+>>> pal2("madam")
+pal
+>>> pal2("hpv")
+not pal
+>>> pal2("Amore, Roma")
+not pal
+>>> not pal
+False
+>>> pal2("AmoreRoma")
+not pal
+>>> def pal2(s):
+	s=s.lower();
+	length = len(s);
+	i = 0 ;
+	ret = 0;
+	j = length-1;
+	while i!=j:
+		if s[i]==s[j]:
+			ret =1;
+		else:
+			break;
+		i=i+1;
+		j=j-1;
+	if ret == 1:
+		print "pal";
+	else:
+		print "not pal";
+
+	
+>>> pal2("AmoreRoma")
+pal
+>>> dir('String')
+['__add__', '__class__', '__contains__', '__delattr__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__getslice__', '__gt__', '__hash__', '__init__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '_formatter_field_name_split', '_formatter_parser', 'capitalize', 'center', 'count', 'decode', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'index', 'isalnum', 'isalpha', 'isdigit', 'islower', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> dir('String'.'format')
+SyntaxError: invalid syntax
+>>> dir('String'.format)
+['__call__', '__class__', '__cmp__', '__delattr__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__name__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__self__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__']
+>>> help('String'.format)
+Help on built-in function format:
+
+format(...)
+    S.format(*args, **kwargs) -> string
+    
+    Return a formatted version of S, using substitutions from args and kwargs.
+    The substitutions are identified by braces ('{' and '}').
+
+>>> s
+'1j3j3'
+>>> s.format({'j'},{'1'})
+'1j3j3'
+>>> s.format({'j','3'},{'1'})
+'1j3j3'
+>>> dir(list)
+['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__delslice__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getslice__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__setslice__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+>>> help(list.append)
+Help on method_descriptor:
+
+append(...)
+    L.append(object) -- append object to end
+
+>>> help(list.extend)
+Help on method_descriptor:
+
+extend(...)
+    L.extend(iterable) -- extend list by appending elements from the iterable
+
+>>> help(String.format)
+
+Traceback (most recent call last):
+  File "<pyshell#113>", line 1, in <module>
+    help(String.format)
+NameError: name 'String' is not defined
+>>> help('String'.rfind)
+Help on built-in function rfind:
+
+rfind(...)
+    S.rfind(sub [,start [,end]]) -> int
+    
+    Return the highest index in S where substring sub is found,
+    such that sub is contained within S[start:end].  Optional
+    arguments start and end are interpreted as in slice notation.
+    
+    Return -1 on failure.
+
+>>> s="harpraeet"
+>>> s.rfind("ar")
+1
+>>> s="harpareet"
+>>> s.rfind("ar")
+4
+>>> help(s.strip)
+Help on built-in function strip:
+
+strip(...)
+    S.strip([chars]) -> string or unicode
+    
+    Return a copy of the string S with leading and trailing
+    whitespace removed.
+    If chars is given and not None, remove characters in chars instead.
+    If chars is unicode, S will be converted to unicode before stripping
+
+>>> line = "abc#@!?efg12;:?"
+>>> chars = [ '#' , '@' , '!','?',';',':']
+>>> for c in line:
+	if c in chars:
+		line.replace(c,'')
+
+	
+'abc@!?efg12;:?'
+'abc#!?efg12;:?'
+'abc#@?efg12;:?'
+'abc#@!efg12;:'
+'abc#@!?efg12:?'
+'abc#@!?efg12;?'
+'abc#@!efg12;:'
+>>> line
+'abc#@!?efg12;:?'
+>>> line = line.replace('?','')
+>>> line
+'abc#@!efg12;:'
+>>> for c in line:
+	if c in chars:
+		line = line.replace(c,'')
+
+	
+>>> line
+'abcefg12'
+>>> line = 'Are we not pure? “No sir!” Panama’s moody Noriega brags. “It is garbage!” Irony dooms a man; a prisoner '
+>>> chars.extend(" ",'"')
+
+Traceback (most recent call last):
+  File "<pyshell#134>", line 1, in <module>
+    chars.extend(" ",'"')
+TypeError: extend() takes exactly one argument (2 given)
+>>> chars.extend(" ")
+>>> chars
+['#', '@', '!', '?', ';', ':', ' ']
+>>> chars.extend("'")
+>>> chars
+['#', '@', '!', '?', ';', ':', ' ', "'"]
+>>> chars.pop()
+"'"
+>>> line = 'Are we not pure? No sir! Panamas moody Noriega brags. It is garbage! Irony dooms a man; a prisoner '
+>>> chars.extend('.')
+>>> chars
+['#', '@', '!', '?', ';', ':', ' ', '.']
+>>> for c in line:
+	if c in chars:
+		line = line.replace(c,'')
+
+	
+>>> line
+'ArewenotpureNosirPanamasmoodyNoriegabragsItisgarbageIronydoomsamanaprisoner'
+>>> dir
+<built-in function dir>
+>>> dir()
+['__builtins__', '__doc__', '__name__', '__package__', 'a', 'b', 'c', 'chars', 'line', 'pal', 'pal2', 's']
+>>> palw(line)
+
+Traceback (most recent call last):
+  File "<pyshell#148>", line 1, in <module>
+    palw(line)
+NameError: name 'palw' is not defined
+>>> pal2(line)
+not pal
+>>> line = line +"upto new era"
+>>> def removeExtras(line):
+	for c in line:
+		if c in chars:
+			line = line.replace(c,'')
+
+			
+>>> line
+'ArewenotpureNosirPanamasmoodyNoriegabragsItisgarbageIronydoomsamanaprisonerupto new era'
+>>> removeExtras(line)
+>>> line
+'ArewenotpureNosirPanamasmoodyNoriegabragsItisgarbageIronydoomsamanaprisonerupto new era'
+>>> chars
+['#', '@', '!', '?', ';', ':', ' ', '.']
+>>> def removeExtras(line):
+	for c in line:
+		if c in chars:
+			line = line.replace(c,'')
+	return line;
+
+>>> line = removeExtras(line)
+>>> line
+'ArewenotpureNosirPanamasmoodyNoriegabragsItisgarbageIronydoomsamanaprisoneruptonewera'
+>>> pal2(line)
+pal
+>>> 
